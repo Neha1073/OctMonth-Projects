@@ -19,7 +19,7 @@ Developed a user-interactive script for article generation using OpenAI API
  
  Supabase Project URL - https://iunowtsuwuchrrthyrrc.supabase.co
 
- Render link - 
+ Render link - https://python-assignment-wmkt.onrender.com
 
  URL - 127.0.0.1:8000/docs
 
