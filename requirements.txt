@@ -10,3 +10,4 @@ packaging~=23.1
 pyparsing~=3.0.9
 fastapi~=0.68.0
 openai~=0.28.1
+uvicorn~=0.15.0
