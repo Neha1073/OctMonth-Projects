@@ -1,0 +1,49 @@
+
+
+#Task 1: Setting up PostgreSQL Database
+
+....................................................................
+
+
+
+
+#Write a SQL query to retrieve the titles and authors of all books published before the year 2000.
+#query - 1
+
+SELECT title, author
+FROM books
+WHERE publication_year < 2000;
+
+#Create a query that lists all users who have never checked out a book from the library.
+#query - 2
+
+SELECT id, name, email
+FROM users
+WHERE id NOT IN (
+    SELECT DISTINCT user_id
+    FROM checkouts
+);
+
+
+#Write a query to find the book with the most available copies.
+#query - 3
+
+SELECT id, title, author, available_copies
+FROM books
+ORDER BY available_copies DESC
+LIMIT 1;
+
+
+#Create a query that calculates the average number of days a book is checked out. Consider only the books that have been returned.
+#query - 4
+
+SELECT AVG(return_date::date - checkout_date::date) AS avg_days_checked_out
+FROM checkouts
+WHERE return_date IS NOT NULL;
+
+#Write a SQL query to update the available_copies field of a book with the given id. You can choose any book and update it with a new value.
+#query - 5
+
+UPDATE books
+SET available_copies = 10
+WHERE id = 1;
