@@ -1,5 +1,5 @@
 
-# Neha-Shukla_python_assign_oct
+# October Month Projects
 
 This repository includes 3 Task files-
 
